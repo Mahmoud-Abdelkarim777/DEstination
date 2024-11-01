@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Capture.PNG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 5.2.3 css  -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- cdn jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <!-- cdn slick carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- external css file  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JS-Site</title>
+</head>
+<body>
+    <i class="fa-solid fa-arrow-up body-arrow-up" onclick="srcollToTop()"></i>
+    <!-- start navbar  -->
+    <nav class="navbar navbar-expand-lg bg-color">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div>
+                    <p class="fw-bold mb-0">
+                        <span>DE</span>STINATION
+                    </p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 mt-lg-0" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recommended">Recommends</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar  -->
+    <!-- start hero   -->
+    <div class="hero d-flex justify-content-center align-items-center" id="home">
+        <div class="container">
+            <form action="index.html" method="get" class="search-form d-flex justify-content-center align-items-center flex-wrap gap-3 rounded  ">
+                <div class="form-group" style="flex: 100%;">
+                    <i class="fa-solid fa-location-dot "></i>
+                    <input type="text" class="form-control" placeholder="Type your destination....">
+                </div>
+                <div class="form-group">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <input type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                </div>
+                <div class="form-group">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <input type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                </div>
+                <div class="form-group">
+                    <i class="fa-solid fa-bed"></i>
+                    <select name="" id="" class="form-control">
+                        <option value="">Rooms</option>
+                        <option value="">1 Room</option>
+                        <option value="">2 Rooms</option>
+                        <option value="">3 Rooms</option>
+                        <option value="">4 Rooms</option>
+                        <option value="">5 Rooms</option>
+                        <option value="">6 Rooms</option>
+                        <option value="">7 Rooms</option>
+                        <option value="">8 Rooms</option>
+                        <option value="">9 Rooms</option>
+                        <option value="">10 Rooms</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <i class="fa-solid fa-user"></i>
+                    <select name="" id="" class="form-control">
+                        <option value="">Adults</option>
+                        <option value="">1 Room</option>
+                        <option value="">2 Rooms</option>
+                        <option value="">3 Rooms</option>
+                        <option value="">4 Rooms</option>
+                        <option value="">5 Rooms</option>
+                        <option value="">6 Rooms</option>
+                        <option value="">7 Rooms</option>
+                        <option value="">8 Rooms</option>
+                        <option value="">9 Rooms</option>
+                        <option value="">10 Rooms</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <i class="fa-solid fa-user"></i>
+                    <select name="" id="" class="form-control">
+                        <option value="">Children  </option>
+                        <option value="">1 Room</option>
+                        <option value="">2 Rooms</option>
+                        <option value="">3 Rooms</option>
+                        <option value="">4 Rooms</option>
+                        <option value="">5 Rooms</option>
+                        <option value="">6 Rooms</option>
+                        <option value="">7 Rooms</option>
+                        <option value="">8 Rooms</option>
+                        <option value="">9 Rooms</option>
+                        <option value="">10 Rooms</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-color w-100 border-0 text-uppercase fw-bold "type="submit">Check</button>
+                </div>
+            </form>
+            <p class="need-help text-center mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, non.
+                <a href="#">Need help?</a>
+            </p>
+        </div>
+    </div>
+    <!-- end hero   -->
+    <!-- start subscribe section -->
+    <section class="section-color">
+        <div class="container text-center">
+            <h2 class="section-title">We are here to help you.</h2>
+            <p class="section-sub-title">Subscribe to get our news letters</p>
+            <a href="" class="btn btn-white">Subscribe Newletters</a>
+        </div>
+    </section>
+    <!-- end subscribe section -->
+    <!-- start services section -->
+    <section class="service" id="service">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 100 100" preserveAspectRatio="none" class="polygon-down">
+            <polygon fill="var(--color-primary)" points="0,0 100,0 50,90"/>
+        </svg>
+        <div class="container">
+            <div class="row">
+                <article class="article col-lg-4">
+                    <i class="fa-solid fa-legal article-icon"></i>
+                    <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum neque laboriosam expedita pariatur magnam fugit explicabo?</p>
+                    <a href="#" class="btn btn-color">Continue reading</a>
+                </article>
+                <article class="article col-lg-4">
+                    <i class="fa-solid fa-user article-icon"></i>
+                    <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum neque laboriosam expedita pariatur magnam fugit explicabo?</p>
+                    <a href="#" class="btn btn-color">Continue reading</a>
+                </article>
+                <article class="article col-lg-4">
+                    <i class="fa-solid fa-plane article-icon"></i>
+                    <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum neque laboriosam expedita pariatur magnam fugit explicabo?</p>
+                    <a href="#" class="btn btn-color">Continue reading</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- end services section -->
+    <!-- start section slider  -->
+    <section class="slider-containrt my-5" id="recommended">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="carousel">
+                        <article class="carousel-items">
+                            <img src="./assets/img/img-01.jpg" alt="image">
+                            <div class="carousel-item-container">
+                                <h3>Lorem ipsum dolor sit amet. </h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestias eum ratione explicabo a optio in ipsum voluptate aperiam?</p>
+                                <a href="" class="btn btn-color">More Info</a>
+                            </div>
+                        </article>
+                        <article class="carousel-items">
+                            <img src="./assets/img/img-02.jpg" alt="image">
+                            <div class="carousel-item-container">
+                                <h3>Lorem ipsum dolor sit amet. </h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestias eum ratione explicabo a optio in ipsum voluptate aperiam?</p>
+                                <a href="" class="btn btn-color">More Info</a>
+                            </div>
+                        </article>
+                        <article class="carousel-items">
+                            <img src="./assets/img/img-03.jpg" alt="image">
+                            <div class="carousel-item-container">
+                                <h3>Lorem ipsum dolor sit amet. </h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestias eum ratione explicabo a optio in ipsum voluptate aperiam?</p>
+                                <a href="" class="btn btn-color">More Info</a>
+                            </div>
+                        </article>
+                        <article class="carousel-items">
+                            <img src="./assets/img/img-04.jpg" alt="image">
+                            <div class="carousel-item-container">
+                                <h3>Lorem ipsum dolor sit amet. </h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestias eum ratione explicabo a optio in ipsum voluptate aperiam?</p>
+                                <a href="" class="btn btn-color">More Info</a>
+                            </div>
+                        </article>
+                        <article class="carousel-items">
+                            <img src="./assets/img/img-05.jpg" alt="image">
+                            <div class="carousel-item-container">
+                                <h3>Lorem ipsum dolor sit amet. </h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestias eum ratione explicabo a optio in ipsum voluptate aperiam?</p>
+                                <a href="" class="btn btn-color">More Info</a>
+                            </div>
+                        </article>
+                        <article class="carousel-items">
+                            <img src="./assets/img/img-01.jpg" alt="image">
+                            <div class="carousel-item-container">
+                                <h3>Lorem ipsum dolor sit amet. </h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestias eum ratione explicabo a optio in ipsum voluptate aperiam?</p>
+                                <a href="" class="btn btn-color">More Info</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="star-places">
+                        <div class="star-places-header">
+                            <h3>Recommended Places.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="star-places-body">
+                            <a href="" >
+                                <img src="./assets/img/tn-img-01.jpg" alt="image">
+                                <h4>Europe</h4>
+                            </a>
+                            <a href="" >
+                                <img src="./assets/img/tn-img-02.jpg" alt="image">
+                                <h4>Asia</h4>
+                            </a>
+                            <a href="">
+                                <img src="./assets/img/tn-img-03.jpg" alt="image">
+                                <h4>Africa</h4>
+                            </a>
+                            <a href="" >
+                                <img src="./assets/img/tn-img-04.jpg" alt="image">
+                                <h4>America</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section slider  -->
+    <!-- start section video  -->
+    <section class="video">
+        <div class="video-overlay">
+            <i class="fa-solid fa-play-circle video-control-play"></i>
+            <i class="fa-solid fa-pause-circle video-control-pause"></i>
+        </div>
+        <div class="video-container">
+            <video class="video">
+                <source src="./assets\videos\video.mp4" type="video/mp4">
+                <source src="./assets\videos\video.mp4" type="video/oog">
+                Your browser does not support the video tag. Please upgrade to a modern browser.
+            </video>
+        </div>
+    </section>
+    <!-- end section video  -->
+    <!-- start section contact  -->
+    <section class="contact my-5" id="contact">
+        <div class="container">
+            <div class="row gap-3 gap-lg-0">
+                <div class="col-lg-6">
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464820.13724079134!2d39.947237485168735!3d24.471339929686412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbe5197d220d5%3A0x2e54514fea3b08d9!2z2KfZhNmF2K_ZitmG2Kkg2KfZhNmF2YbZiNix2Kkg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1730412350160!5m2!1sar!2seg"
+                    style="border:0; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <form action="" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Name" required>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="" id="" class="form-control" placeholder="Email" required>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Subject" required>
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" name="" id="" class="form-control" rows="5" placeholder="Message" required></textarea>
+                            <i class="fa-solid fa-commenting"></i>
+                        </div>
+                        <button type="submit" class="btn btn-color" >Send Message Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section contact  -->
+    <!-- start footer  -->
+    <footer class="footer">
+        <div class="container">
+            <p>CopyRights &copy; 2024 <span>DE</span>STINATION</p>
+            <p>coded by <strong><span>MAHMOUD</span></strong></p>
+        </div>
+    </footer>
+    <!-- end footer  -->
+    <!-- bootstrap 5.2.3 js  -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- cdn jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <!-- slick carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- external js file  -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
