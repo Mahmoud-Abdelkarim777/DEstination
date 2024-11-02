@@ -164,6 +164,11 @@ body .body-arrow-up{
     border-radius: 5px;
     background-color: var(--color-card-hover);
 }
+@media (max-width: 768px) {
+    .service .row .article:hover{
+        scale: 1;
+    }
+}
 .service .row .article .article-icon{
     font-size: 3rem;
     margin-bottom: 10px;
